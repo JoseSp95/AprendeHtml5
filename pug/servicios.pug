@@ -3,3 +3,7 @@ extends templates/template
 append config
     -pageTitle = "Servicios"
     -description = "Desripcion de los servicios ofrecidos"
+    -currentPage = "servicios"
+
+block banner
+    img(class="responsive-img" src="/img/" + currentPage + ".jpg" )

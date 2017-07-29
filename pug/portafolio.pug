@@ -2,4 +2,8 @@ extends templates/template
 
 append config
     -pageTitle = "Portafolio"
-        -description = "Descripcion de nuestro portafolio"
+    -description = "Descripcion de nuestro portafolio"
+    -currentPage = "portafolio"
+
+block banner
+    img(src="/img/" + currentPage + ".jpg" class="responsive-img")

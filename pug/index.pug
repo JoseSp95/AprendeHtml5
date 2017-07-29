@@ -1,1 +1,7 @@
-extends templates/template.pug
+extends templates/template
+append config
+    -currentPage = "inicio"
+
+block banner
+    img(src="/img/" + currentPage + ".jpg" class="responsive-img image-banner")
+

@@ -1,8 +1,17 @@
 block config
-    include ../config/config.pug
+    include ../config/config
 
 doctype html
 html
     head
         title #{pageTitle} | #{siteTitle}
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css")
+        link(rel="stylesheet" href="/css/styles.css")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js" )
         meta(charset="utf-8")
+    body
+        header
+            img(src="/img/html.png" width="100")
+            nav
+                include ../blocks/menu
+            block banner
